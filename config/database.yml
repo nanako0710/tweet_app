@@ -90,3 +90,8 @@ production:
   dapter: postgresql
   encoding: unicode
   pool: 5
+  username: vifoopsdsbljpo
+  password: e115aa232d177f8ced3853bf9e9e516237dff38526dc3c57a0ed3d477b770fb2
+  hostname: ec2-184-72-247-70.compute-1.amazonaws.com
+  port: 5432
+  database: d1pi2dmbv5t6pj
