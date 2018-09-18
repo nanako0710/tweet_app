@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NEWPROJECT</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+</html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TweetApp</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <!-- ここにヘッダーを書いてください -->
+    <header>
+  <div class="header-logo">
+    <a href="/">TweetApp</a>
+  </div>
+  <ul class="header-menus">
+    　<li><a href="/about">TweetAppとは</a></li>
+      <li><a href="/posts/index">投稿一覧</a></li>
+      <li><a href="/posts/new">新規投稿</a></li>
+  </ul>
+</header>
+
+    <!-- 各ビューファイルは以下のyieldに代入され、application.html.erbの一部となる -->
+    <%= yield %>
+  </body>
+</html>
